@@ -1,0 +1,438 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Taller de investigación I",
+    "section": "",
+    "text": "Horario\nMartes: 08 a 10 horas\nJueves: 08 a 10 horas\nUbicación\nEdificio H\nProfesor\nJulio Pastor Guzman\n\n\n\n\n\n\n\nEsta asignatura\n\n\n\nAporta al perfil del egresado los conocimientos y herramientas para conocer, analizar y descubrir áreas de oportunidad en los diferentes ámbitos donde desarrollará su profesión y proponer soluciones interdisciplinarias y colaborativas con un enfoque sustentable.\n\n\n\n\n\n\n\n\nBienvenidos!\n\nDescubrirás las herramientas y técnicas de recolección de datos, como la observación y el diario de campo, para identificar áreas de oportunidad en tu entorno profesional.\nLa importancia de elaborar un protocolo de investigación radica en la capacidad de proponer soluciones científico-tecnológicas con un enfoque sustentable ante problemáticas reales.\nEn esta página encontrarás el temario, diapositivas, trabajos y evaluaciones del curso.\n\n\n\nCompetencia a desarrollar\nAl final de esta asignatura, el o la estudiante será capaz de:\n\nElabora un protocolo de investigación en el que presenta soluciones científico-tecnológicas a problemáticas relacionadas con su campo profesional en diversos contextos.\n\n\n\nPre-requisitos\n\nAplica los elementos de la investigación documental para elaborar escritos académicos de su entorno profesional.\n\n\n\nTemas\nLa asignatura se encuentra dividida en tres grandes temas:  \n\n\n\n\n\nUnidad\nDescripción\n\n\n\n\n1\nTipos de investigación\n\n\n2\nEstructura del protocolo\n\n\n3\nComunicación del protocolo"
+  },
+  {
+    "objectID": "part_2_eda.html",
+    "href": "part_2_eda.html",
+    "title": "Part I",
+    "section": "",
+    "text": "Page with R code\n\n\n\nThis page contains an example template for a lab session, where R code and results are displayed here.\nYou can find more information on how to include code in Quarto website here.\nYou can experiment with code-fold and code-tools in the yaml header above to change how the code cells look like.",
+    "crumbs": [
+      "Home",
+      "Part I"
+    ]
+  },
+  {
+    "objectID": "part_2_eda.html#a-cancer-modeling-example",
+    "href": "part_2_eda.html#a-cancer-modeling-example",
+    "title": "Part I",
+    "section": "A Cancer Modeling Example",
+    "text": "A Cancer Modeling Example\nExercise on analysis of miRNA, mRNA and protein data from the paper Aure et al, Integrated analysis reveals microRNA networks coordinately expressed with key proteins in breast cancer, Genome Medicine, 2015.\nPlease run the code provided to replicate some of the analyses. Make sure you can explain what all the analysis steps do and that you understand all the results.\nIn addition, there are some extra tasks (Task 1), where no R code is provided. Please do these tasks when you have time available at the end of the lab.\n\nLoad the data\nRead the data, and convert to matrix format.\n\nmrna &lt;- read.table(\"data/data_example.txt\", header=T, sep=\"\\t\", dec=\".\")\n\n# Convert to matrix format\n\nmrna &lt;- as.matrix(mrna)\n\nPrint the data\n\nmrna[1:4, 1:4]\n\n      OSL2R.3002T4 OSL2R.3005T1 OSL2R.3013T1 OSL2R.3030T2\nACACA      1.60034     -0.49087     -0.26553     -0.27857\nANXA1     -2.42501     -0.05416     -0.46478     -2.18393\nAR         0.39615     -0.43348     -0.10232      0.58299\nBAK1       0.78627      0.39897      0.22598     -1.31202\n\n\nVisualise the overall distribution of expression levels by histogram\n\nhist(mrna, nclass=40, xlim=c(-5,5), col=\"lightblue\")\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTask 1\n\n\n\nThis is a callout-note, and it can be quite useful for exercises. You can find more about callout here.\nExample: Extend the above analysis to cover all genes.",
+    "crumbs": [
+      "Home",
+      "Part I"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About page\n\n\n\nThis page contains some elaborated background information about your workshop, or the instructors.\n\n\nFor example: A central problem in machine learning is how to make an algorithm perform well not just on the training data, but also on new inputs. Many strategies in machine learning are explicitly designed to reduce this test error, possibly at the expense of increased training error. These strategies are collectively known as regularisation and they are instrumental for good performance of any kind of prediction or classification model, especially in the context of small data (many features, few samples).\nIn the hands-on tutorial we will use R to perform an integrated analysis of multi-omics data with penalised regression.\n\nContact\nInstructor A: contact\nInstructor B: contact\nInstructor C: contact"
+  },
+  {
+    "objectID": "part_1_prep.html",
+    "href": "part_1_prep.html",
+    "title": "Preparation",
+    "section": "",
+    "text": "Page without code\n\n\n\nThis page contains an example for some structured preparation information for a workshop. No code is executed here.\nHere are some preparation information for the participants.",
+    "crumbs": [
+      "Home",
+      "Preparation"
+    ]
+  },
+  {
+    "objectID": "part_1_prep.html#software",
+    "href": "part_1_prep.html#software",
+    "title": "Preparation",
+    "section": "Software",
+    "text": "Software\nIn this workshop we will be using R. You can either\n\nhave R and Rstudio installed on your laptop\nor, use Posit cloud (formerly Rstudio Cloud).\n\nPosit cloud is free of charge for personal users, yet you need to sign up for a new user account and have internet connection.\nThe R package we are using is glmnet.",
+    "crumbs": [
+      "Home",
+      "Preparation"
+    ]
+  },
+  {
+    "objectID": "part_1_prep.html#data",
+    "href": "part_1_prep.html#data",
+    "title": "Preparation",
+    "section": "Data",
+    "text": "Data\nThe datasets we use can be found here (insert link).",
+    "crumbs": [
+      "Home",
+      "Preparation"
+    ]
+  },
+  {
+    "objectID": "part_1_prep.html#code",
+    "href": "part_1_prep.html#code",
+    "title": "Preparation",
+    "section": "Code",
+    "text": "Code\nThe R scripts used in part 1 and part 2 can be found here (insert link).",
+    "crumbs": [
+      "Home",
+      "Preparation"
+    ]
+  },
+  {
+    "objectID": "part_1_prep.html#resources",
+    "href": "part_1_prep.html#resources",
+    "title": "Preparation",
+    "section": "Resources",
+    "text": "Resources\nLecture notes (insert link)\nLab notes (insert link)",
+    "crumbs": [
+      "Home",
+      "Preparation"
+    ]
+  },
+  {
+    "objectID": "U1.html",
+    "href": "U1.html",
+    "title": "Unidad 1: Tipos de investigación",
+    "section": "",
+    "text": "Note\n\n\n\n\nDistingue los tipos de investigación, así como los métodos y técnicas de cada uno de ellos.\n\n\n\n\n\n\n\nDiapositivas\n\n\n\n\n\nTemario\n\n\n\n\n\nEvaluación\n\n\n\n\n\nTrabajos",
+    "crumbs": [
+      "Inicio",
+      "Unidad 1: Tipos de investigación"
+    ]
+  },
+  {
+    "objectID": "U1.html#software",
+    "href": "U1.html#software",
+    "title": "Unidad 1",
+    "section": "Software",
+    "text": "Software\nIn this workshop we will be using R. You can either\n\nhave R and Rstudio installed on your laptop\nor, use Posit cloud (formerly Rstudio Cloud).\n\nPosit cloud is free of charge for personal users, yet you need to sign up for a new user account and have internet connection.\nThe R package we are using is glmnet.",
+    "crumbs": [
+      "Home",
+      "Unidad 1"
+    ]
+  },
+  {
+    "objectID": "U1.html#data",
+    "href": "U1.html#data",
+    "title": "Unidad 1",
+    "section": "Data",
+    "text": "Data\nThe datasets we use can be found here (insert link).",
+    "crumbs": [
+      "Home",
+      "Unidad 1"
+    ]
+  },
+  {
+    "objectID": "U1.html#code",
+    "href": "U1.html#code",
+    "title": "Unidad 1",
+    "section": "Code",
+    "text": "Code\nThe R scripts used in part 1 and part 2 can be found here (insert link).",
+    "crumbs": [
+      "Home",
+      "Unidad 1"
+    ]
+  },
+  {
+    "objectID": "U1.html#resources",
+    "href": "U1.html#resources",
+    "title": "Unidad 1",
+    "section": "Resources",
+    "text": "Resources\nLecture notes (insert link)\nLab notes (insert link)",
+    "crumbs": [
+      "Home",
+      "Unidad 1"
+    ]
+  },
+  {
+    "objectID": "U2.html",
+    "href": "U2.html",
+    "title": "Unidad 2: Estructura del protocolo",
+    "section": "",
+    "text": "Note\n\n\n\n\nDiseña un protocolo de investigación.\n\n\n\n\n\n\n\nDiapositivas\n\n\n\n\n\nTemario\n\n\n\n()\n\nEvaluación\n\n\n\n\n\nTrabajos",
+    "crumbs": [
+      "Inicio",
+      "Unidad 2: Estructura del protocolo"
+    ]
+  },
+  {
+    "objectID": "U2.html#a-cancer-modeling-example",
+    "href": "U2.html#a-cancer-modeling-example",
+    "title": "Unidad 2",
+    "section": "A Cancer Modeling Example",
+    "text": "A Cancer Modeling Example\nExercise on analysis of miRNA, mRNA and protein data from the paper Aure et al, Integrated analysis reveals microRNA networks coordinately expressed with key proteins in breast cancer, Genome Medicine, 2015.\nPlease run the code provided to replicate some of the analyses. Make sure you can explain what all the analysis steps do and that you understand all the results.\nIn addition, there are some extra tasks (Task 1), where no R code is provided. Please do these tasks when you have time available at the end of the lab.\n\nLoad the data\nRead the data, and convert to matrix format.\n\nmrna &lt;- read.table(\"data/data_example.txt\", header=T, sep=\"\\t\", dec=\".\")\n\n# Convert to matrix format\n\nmrna &lt;- as.matrix(mrna)\n\nPrint the data\n\nmrna[1:4, 1:4]\n\n      OSL2R.3002T4 OSL2R.3005T1 OSL2R.3013T1 OSL2R.3030T2\nACACA      1.60034     -0.49087     -0.26553     -0.27857\nANXA1     -2.42501     -0.05416     -0.46478     -2.18393\nAR         0.39615     -0.43348     -0.10232      0.58299\nBAK1       0.78627      0.39897      0.22598     -1.31202\n\n\nVisualise the overall distribution of expression levels by histogram\n\nhist(mrna, nclass=40, xlim=c(-5,5), col=\"lightblue\")\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTask 1\n\n\n\nThis is a callout-note, and it can be quite useful for exercises. You can find more about callout here.\nExample: Extend the above analysis to cover all genes.",
+    "crumbs": [
+      "Home",
+      "Unidad 2"
+    ]
+  },
+  {
+    "objectID": "U3.html",
+    "href": "U3.html",
+    "title": "Unidad 3: Comunicación del protocolo",
+    "section": "",
+    "text": "Note\n\n\n\n\nRedacta el informe del protocolo y lo presenta oralmente.\n\n\n\n\n\n\n\nDiapositivas\n\n\n\n\n\nTemario\n\n\n\n()\n\nEvaluación\n\n\n\n\n\nTrabajos",
+    "crumbs": [
+      "Inicio",
+      "Unidad 3: Comunicación del protocolo"
+    ]
+  },
+  {
+    "objectID": "U3.html#software",
+    "href": "U3.html#software",
+    "title": "Unidad 3",
+    "section": "Software",
+    "text": "Software\n\nIn this workshop we will be using R. You can either\n\nhave R and Rstudio installed on your laptop\nor, use Posit cloud (formerly Rstudio Cloud).\n\nPosit cloud is free of charge for personal users, yet you need to sign up for a new user account and have internet connection.\nThe R package we are using is glmnet.",
+    "crumbs": [
+      "Home",
+      "Unidad 3"
+    ]
+  },
+  {
+    "objectID": "U3.html#data",
+    "href": "U3.html#data",
+    "title": "Unidad 3",
+    "section": "Data",
+    "text": "Data\n\nThe datasets we use can be found here (insert link).",
+    "crumbs": [
+      "Home",
+      "Unidad 3"
+    ]
+  },
+  {
+    "objectID": "U3.html#code",
+    "href": "U3.html#code",
+    "title": "Unidad 3",
+    "section": "Code",
+    "text": "Code\n\nThe R scripts used in part 1 and part 2 can be found here (insert link).",
+    "crumbs": [
+      "Home",
+      "Unidad 3"
+    ]
+  },
+  {
+    "objectID": "U3.html#resources",
+    "href": "U3.html#resources",
+    "title": "Unidad 3",
+    "section": "Resources",
+    "text": "Resources\n\nLecture notes (insert link)\nLab notes (insert link)",
+    "crumbs": [
+      "Home",
+      "Unidad 3"
+    ]
+  },
+  {
+    "objectID": "U3.html#title-unidad-1",
+    "href": "U3.html#title-unidad-1",
+    "title": "Unidad 1",
+    "section": "title: “Unidad 1”\\",
+    "text": "title: “Unidad 1”\\\nformat:\nhtml:\ncode-fold: false\ncode-tools: false\neditor: visual\n\n\n\n\n\n\nPage without code\n\n\n\nThis page contains an example for some structured preparation information for a workshop. No code is executed here.\n\n\n\nHere are some preparation information for the participants.",
+    "crumbs": [
+      "Home",
+      "Unidad 3"
+    ]
+  },
+  {
+    "objectID": "U3.html#software-1",
+    "href": "U3.html#software-1",
+    "title": "Unidad 1",
+    "section": "Software",
+    "text": "Software\n\n{fig-alt=“Software icon” width=“80px”}\nIn this workshop we will be using R. You can either\n\nhave R and Rstudio installed on your laptop\nor, use Posit cloud (formerly Rstudio Cloud).\n\nPosit cloud is free of charge for personal users, yet you need to sign up for a new user account and have internet connection.\nThe R package we are using is glmnet.",
+    "crumbs": [
+      "Home",
+      "Unidad 3"
+    ]
+  },
+  {
+    "objectID": "U3.html#data-1",
+    "href": "U3.html#data-1",
+    "title": "Unidad 1",
+    "section": "Data",
+    "text": "Data\n\n{fig-alt=“Data icon” width=“80px”}\nThe datasets we use can be found here (insert link).",
+    "crumbs": [
+      "Home",
+      "Unidad 3"
+    ]
+  },
+  {
+    "objectID": "U3.html#code-1",
+    "href": "U3.html#code-1",
+    "title": "Unidad 1",
+    "section": "Code",
+    "text": "Code\n\n{fig-alt=“Code icon” width=“80px”}\nThe R scripts used in part 1 and part 2 can be found here (insert link).",
+    "crumbs": [
+      "Home",
+      "Unidad 3"
+    ]
+  },
+  {
+    "objectID": "U3.html#resources-1",
+    "href": "U3.html#resources-1",
+    "title": "Unidad 1",
+    "section": "Resources",
+    "text": "Resources\n\n{fig-alt=“Resources icon” width=“80px”}\nLecture notes (insert link)\nLab notes (insert link)",
+    "crumbs": [
+      "Home",
+      "Unidad 3"
+    ]
+  },
+  {
+    "objectID": "U4.html",
+    "href": "U4.html",
+    "title": "Unidad 4",
+    "section": "",
+    "text": "Note\n\n\n\n\nDefine la importancia de la Meteorología y sus elementos para garantizar la seguridad del turista.\n\n\n\n\n\n\n\nDiapositivas\n\n\n\n\n\nTemario\n\n\n\n\n\nEvaluación\n\n\n\n\n\nTrabajos"
+  },
+  {
+    "objectID": "U4.html#software",
+    "href": "U4.html#software",
+    "title": "Unidad 4",
+    "section": "Software",
+    "text": "Software\n\nIn this workshop we will be using R. You can either\n\nhave R and Rstudio installed on your laptop\nor, use Posit cloud (formerly Rstudio Cloud).\n\nPosit cloud is free of charge for personal users, yet you need to sign up for a new user account and have internet connection.\nThe R package we are using is glmnet.",
+    "crumbs": [
+      "Home",
+      "Unidad 4"
+    ]
+  },
+  {
+    "objectID": "U4.html#data",
+    "href": "U4.html#data",
+    "title": "Unidad 4",
+    "section": "Data",
+    "text": "Data\n\nThe datasets we use can be found here (insert link).",
+    "crumbs": [
+      "Home",
+      "Unidad 4"
+    ]
+  },
+  {
+    "objectID": "U4.html#code",
+    "href": "U4.html#code",
+    "title": "Unidad 4",
+    "section": "Code",
+    "text": "Code\n\nThe R scripts used in part 1 and part 2 can be found here (insert link).",
+    "crumbs": [
+      "Home",
+      "Unidad 4"
+    ]
+  },
+  {
+    "objectID": "U4.html#resources",
+    "href": "U4.html#resources",
+    "title": "Unidad 4",
+    "section": "Resources",
+    "text": "Resources\n\nLecture notes (insert link)\nLab notes (insert link)",
+    "crumbs": [
+      "Home",
+      "Unidad 4"
+    ]
+  },
+  {
+    "objectID": "U4.html#software-1",
+    "href": "U4.html#software-1",
+    "title": "Unidad 4",
+    "section": "Software",
+    "text": "Software\n\nIn this workshop we will be using R. You can either\n\nhave R and Rstudio installed on your laptop\nor, use Posit cloud (formerly Rstudio Cloud).\n\nPosit cloud is free of charge for personal users, yet you need to sign up for a new user account and have internet connection.\nThe R package we are using is glmnet.",
+    "crumbs": [
+      "Home",
+      "Unidad 4"
+    ]
+  },
+  {
+    "objectID": "U4.html#data-1",
+    "href": "U4.html#data-1",
+    "title": "Unidad 4",
+    "section": "Data",
+    "text": "Data\n\nThe datasets we use can be found here (insert link).",
+    "crumbs": [
+      "Home",
+      "Unidad 4"
+    ]
+  },
+  {
+    "objectID": "U4.html#code-1",
+    "href": "U4.html#code-1",
+    "title": "Unidad 4",
+    "section": "Code",
+    "text": "Code\n\nThe R scripts used in part 1 and part 2 can be found here (insert link).",
+    "crumbs": [
+      "Home",
+      "Unidad 4"
+    ]
+  },
+  {
+    "objectID": "U4.html#resources-1",
+    "href": "U4.html#resources-1",
+    "title": "Unidad 4",
+    "section": "Resources",
+    "text": "Resources\n\nLecture notes (insert link)\nLab notes (insert link)",
+    "crumbs": [
+      "Home",
+      "Unidad 4"
+    ]
+  },
+  {
+    "objectID": "index.html#bienvenidos",
+    "href": "index.html#bienvenidos",
+    "title": "Meteorología y Climatología",
+    "section": "Bienvenidos!",
+    "text": "Bienvenidos!\n\nThe goal of the workshop is to … (insert your message)\nFor example, introduce kep concepts in machine learning, such as regularisation.\nWorkshop material can be found in the workshop github repository."
+  },
+  {
+    "objectID": "index.html#competencia-a-desarrollar",
+    "href": "index.html#competencia-a-desarrollar",
+    "title": "Meteorología y Climatología",
+    "section": "Competencia a desarrollar",
+    "text": "Competencia a desarrollar\nAl final de esta asignatura, el o la estudiante será capaz de:\n\nAplicar los conocimientos de la Meteorología y sus elementos para garantizar la seguridad propia y del turista."
+  },
+  {
+    "objectID": "index.html#pre-requisitos",
+    "href": "index.html#pre-requisitos",
+    "title": "Meteorología y Climatología",
+    "section": "Pre-requisitos",
+    "text": "Pre-requisitos\n\nManejo con propiedad Información geográfica.\nAplica métodos de representación cartográfica."
+  },
+  {
+    "objectID": "index.html#temas",
+    "href": "index.html#temas",
+    "title": "Meteorología y Climatología",
+    "section": "Temas",
+    "text": "Temas\nLa asignatura se encuentra dividida en cuatro temas. Los tres primeros enfocados a meteorología y el cuarto a la climatología.  \n\n\n\n\n\nUnidad\nDescripción\n\n\n\n\n1\nIntroducción a la Meteorología\n\n\n2\nFenómenos atmosféricos de riesgos para las actividades turísticas\n\n\n2\nCirculación general de los vientos atmosféricos\n\n\n2\nClimatología"
+  },
+  {
+    "objectID": "U1-tem.html",
+    "href": "U1-tem.html",
+    "title": "Unidad 1: Tipos de investigación",
+    "section": "",
+    "text": "Competencia\n\n\n\nDistingue los tipos de investigación, así como los métodos y técnicas de cada uno de ellos.\n\n\n\n1.1 Pura y aplicada\n1.2 Cualitativa y cuantitativa\n1.3 Diagnóstica, descriptiva y explicativa\n1.4 Investigación documental y de campo\n1.5 Experimental y no experimental\n1.6 Transversal y longitudinal\n1.7 Técnicas e instrumentos para la recolección de datos: la observación, la entrevista, el cuestionario, la encuesta, el censo y la bitácora ó diario de campo (Definición, características ventajas y desventajas de cada una de ellas)."
+  },
+  {
+    "objectID": "U1-tra.html",
+    "href": "U1-tra.html",
+    "title": "Unidad 1: Tipos de investigación",
+    "section": "",
+    "text": "Actividades de la unidad 1\n\n\n\n\n\nActividad\n\n\nDescripción\n\n\nEntrega\n\n\nCargue aquí\n\n\n\n\nTipos de investigación\n\n\nRevisar cuatro fuentes confiables cuántos tipos de investigación y cuáles son.\n\n\n15-sep-2026\n\n\n Subir \n\n\n\n\nResiduos fondo marino\n\n\nRealizar investigación cuantitativa sobre los residuos sólidos en el fondo marino a partir de fotos submarinas.\n\n\n15-sep-2026\n\n\n Subir \n\n\n\n\nCalidad en el servicio\n\n\nAnalizar encuesta aplicada a 30 usuarios del servicio de buceo para conocer su percepción acerca de la calidad y la seguridad.\n\n\n15-sep-2026\n\n\n Subir \n\n\n\n\nEntrevista\n\n\nFormular preguntas y llevar a cabo una entrevista estructurada a un investigador o investigadora del Tecnológico o externo.\n\n\n21-sep-2026\n\n\n Subir"
+  },
+  {
+    "objectID": "U1-eva.html",
+    "href": "U1-eva.html",
+    "title": "Unidad 1: Tipos de investigación",
+    "section": "",
+    "text": "Note\n\n\n\n\nDistingue los tipos de investigación, así como los métodos y técnicas de cada uno de ellos.\n\n\n\n\n\n\n\nDiapositivas\n\n\n\n\n\nTemario\n\n\n\n\n\nEvaluación\n\n\n\n\n\nTrabajos"
+  },
+  {
+    "objectID": "U2-tem.html",
+    "href": "U2-tem.html",
+    "title": "Unidad 2: Estructura del protocolo",
+    "section": "",
+    "text": "Esta asignatura\n\n\n\nDiseña un protocolo de investigación.\n\n\n\n2.1 Antecedentes del problema\n2.2 Planteamiento del problema\n2.3 Objetivos de la investigación: general y específicos\n2.4 Justificación: Impacto social, tecnológico, ético, económico y ambiental. Viabilidad de la investigación\n2.5 Diseño del marco teórico (referentes teóricos).\n2.6 Formulación de hipótesis o supuestos (si corresponde)\n2.7 Bosquejo del método\n\n2.7.1 Determinación del universo y obtención de la muestra\n2.7.2 Determinación del tipo de estudio (Tipo de investigación)\n2.7.3 Selección, diseño y prueba del instrumento de recolección de la información.\n2.7.4 Plan de recolección de la información para el trabajo de campo\n2.7.5 Plan de procesamiento y análisis de información\n2.7.6 Plan de presentación gráfica de los resultados\n\n2.8 Cronograma\n2.9 Presupuesto y/o financiamiento (si corresponde)\n2.10 Fuentes consultadas."
+  },
+  {
+    "objectID": "U3-tem.html",
+    "href": "U3-tem.html",
+    "title": "Unidad 3: Comunicación del protocolo",
+    "section": "",
+    "text": "Competencia\n\n\n\nRedacta el informe del protocolo y lo presenta oralmente.\n\n\n\n3.1 Estructura formal del documento acorde a lineamientos establecidos.\n3.2 Escenarios de presentación de protocolos."
+  }
+]
